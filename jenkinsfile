@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+
+    stages {
+        stage ('cloning repository') {
+            steps {
+                git "https://github.com/Suryakiran-3117/flask-app.git "
+            }
+        }
+
+        stage ('build docker image') {
+            steps {}
+        }
+    }
+}
